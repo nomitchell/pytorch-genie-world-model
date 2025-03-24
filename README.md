@@ -2,6 +2,7 @@
 
 This project implements a world model for the CoinRun environment using a combination of a video tokenizer, latent action model, and a MaskGIT-based dynamics model. The system can learn to predict future game states based on historical observations and actions.
 
+![Untitledvideo-MadewithClipchamp-ezgif com-video-to-gif-converter (1)](https://github.com/user-attachments/assets/0a6d40fc-f7e7-4bd5-be01-b747d09680fa)
 *Example of CoinRun gameplay and model predictions*
 
 ## Architecture
@@ -20,18 +21,20 @@ The system consists of three main components:
 ## Results
 
 ### VQ-VAE Reconstruction Quality
+![vqvae_recon_sample_1](https://github.com/user-attachments/assets/048938e6-c894-4eb5-8604-6df49ec837d5)
 *Comparison of original frames and VQ-VAE reconstructions*
 
 ### Single-Step Prediction
+![single_step_pred_sample_16](https://github.com/user-attachments/assets/97fe91e0-f53f-4e31-b084-69a0cceba98b)
 *Single-step prediction results with PSNR and SSIM metrics*
 
 ### Multi-Step Prediction
+![multi_step_prediction_frames](https://github.com/user-attachments/assets/ec2ffa00-17da-410b-9f52-630c7e9232e7)
 *Multi-step prediction showing error accumulation over time*
 
 ### Codebook Usage Analysis
+![codebook_usage_histogram](https://github.com/user-attachments/assets/9d183f53-b2e4-4491-844c-614802b77fa7)
 *Distribution of codebook token usage*
-
-## Usage
 
 ### Training
 ```bash
