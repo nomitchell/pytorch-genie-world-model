@@ -72,6 +72,10 @@ class Config:
 pip install -r requirements.txt
 ```
 
+## Next Steps
+
+Split up main.py into subfiles.
+
 ## Acknowledgments
 
 - Based on Deepmind's Genie paper
