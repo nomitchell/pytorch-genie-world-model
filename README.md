@@ -9,30 +9,30 @@ This project implements a world model for the CoinRun environment using a combin
 
 The system consists of three main components:
 
-1. **VQ-VAE (Vector Quantized Variational Autoencoder)**
+1. **Video Tokenizer**
    - Compresses game frames into discrete latent tokens
 
-2. **Latent Action Model (LAM)**
+2. **Latent Action Model**
    - Learns to predict actions from state transitions
 
-3. **MaskGIT-based Dynamics Model**
+3. **Dynamics Model**
    - Predicts future states using masked token prediction
 
 ## Results
 
-### VQ-VAE Reconstruction Quality
+### Video Tokenizer Reconstruction Quality
 ![vqvae_recon_sample_1](https://github.com/user-attachments/assets/048938e6-c894-4eb5-8604-6df49ec837d5)
 *Comparison of original frames and VQ-VAE reconstructions*
 
-### Single-Step Prediction
+### Single-Step Dynamics Model Prediction
 ![single_step_pred_sample_16](https://github.com/user-attachments/assets/97fe91e0-f53f-4e31-b084-69a0cceba98b)
 *Single-step prediction results with PSNR and SSIM metrics*
 
-### Multi-Step Prediction
+### Multi-Step Dynamics Model Prediction
 ![multi_step_prediction_frames](https://github.com/user-attachments/assets/ec2ffa00-17da-410b-9f52-630c7e9232e7)
 *Multi-step prediction showing error accumulation over time*
 
-### Codebook Usage Analysis
+### Video Tokenizer Codebook Usage Analysis
 ![codebook_usage_histogram](https://github.com/user-attachments/assets/9d183f53-b2e4-4491-844c-614802b77fa7)
 *Distribution of codebook token usage*
 
@@ -68,13 +68,9 @@ class Config:
 
 ## Requirements
 
-- Python 3.8+
-- PyTorch 1.9+
-- Procgen
-- OpenCV
-- Pygame
-- NumPy
-- Matplotlib
+```bash
+pip install -r requirements.txt
+```
 
 ## Acknowledgments
 
