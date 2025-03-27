@@ -5,7 +5,7 @@ import pygame
 import cv2
 from datetime import datetime
 
-from main import (
+from train import (
     Config, 
     VQVAEModel, 
     MaskGIT, 

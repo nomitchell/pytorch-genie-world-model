@@ -7,7 +7,7 @@ from tqdm import tqdm
 from skimage.metrics import structural_similarity as ssim
 from skimage.metrics import peak_signal_noise_ratio as psnr
 
-from main import (
+from train import (
     Config, 
     VQVAEModel, 
     LatentActionModel, 
